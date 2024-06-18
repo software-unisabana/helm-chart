@@ -8,8 +8,8 @@ image:
   repository: danielsabana/otrodemo  #Se puede llegar a cambiar por el repo que deseen
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "1.0.3"
-
+  tag: "1"
+#ARGO CD
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
@@ -42,7 +42,7 @@ ingress:
     # kubernetes.io/tls-acme: "true"
   hosts:
     - paths:
-      - path: /otro(/|$)(.*)
+      - path: /api1(/|$)(.*)
         pathType: ImplementationSpecific
 
 resources: 
